@@ -1,0 +1,14 @@
+// ejemplo de table en html como parametro template. 
+<table style="border-collapse: collapse;"> 
+<thead>
+	<tr> 
+		<th id='FIELD' style="font-size: 12px; font-weight: bold;padding: 4px 8px;">FIELD #
+	</th> 
+</thead>
+<tbody> {{#data}} 
+	<tr> 
+		<td headers='FIELD' style="font-size: 12px; border: 1px solid #000000;padding: 4px 8px;" >{{FIELD}}</td>
+	</tr> 
+		{{/data}} 
+</tbody>
+</table> ///ejemplo lines js aplicacion. var test = Mustache.render(s,obj);

@@ -1,0 +1,2 @@
+// codigo para mostrar errores
+apex.message.showErrors([ { type: "error", location: "inline", pageItem: vId, message: vMsg, unsafe: false } ]);

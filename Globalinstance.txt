@@ -1,0 +1,2 @@
+//Como instanciar una variable global con js en APEX
+jsonColl.AppId = $v('pFlowId'); jsonColl.SessionId = $v('pInstance');
