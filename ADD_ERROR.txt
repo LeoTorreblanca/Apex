@@ -1,0 +1,3 @@
+APEX_ERROR.ADD_ERROR( p_message => 'Mensaje de error a mostrar' , p_display_location => apex_error.c_inline_in_notification ); 
+APEX_ERROR.ADD_ERROR( p_message => 'Mensaje de error a mostrar' , p_display_location => apex_error.c_inline_with_field_and_notif , p_page_item_name => 'PXX_ITEM' ); 
+

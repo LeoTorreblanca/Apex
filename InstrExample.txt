@@ -1,0 +1,8 @@
+/*  Para comparar datos de una quey vs arrays tipo :A:B:C:D:*/
+CURSOR DESCRIPCIONES (RUBRO_NUEVO_ IN VARCHAR2)
+IS 
+select descripcion 
+	from tabla_Detalles_tab 
+where tabla = 'TABLE'
+ AND INSTR( ':'||RUBRO_NUEVO||':',':'||CODIGO||':', 1 )>0 
+ order by 1;

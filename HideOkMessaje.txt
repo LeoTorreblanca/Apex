@@ -1,0 +1,5 @@
+/*
+Codigo para ocultar automaticamente el mensaje de exito que se muestra al ejecutar correctamente un proceso.
+*/
+
+setTimeout('if(!$("#APEX_SUCCESS_MESSAGE").hasClass("u-hidden")){$("#APEX_SUCCESS_MESSAGE").removeClass("u-visible").addClass("u-hidden");}', 2000);
