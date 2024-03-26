@@ -1,0 +1,3 @@
+function JsMail(pSubject,pBody) {
+    document.location.href = "mailto:?subject="+pSubject+"&body="+encodeURIComponent(pBody);
+};

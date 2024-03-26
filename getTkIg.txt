@@ -1,0 +1,13 @@
+function getTkIg(pRepID){
+    var ig$ = apex.region(pRepID).widget();
+    var grid = ig$.interactiveGrid("getViews", "grid");
+    var model = grid.model;
+    var selectedRecords = grid.getSelectedRecords();
+    var l_arrTk  = [];
+    var l_tk = '';
+    
+    selectedRecords.forEach(function (record) {
+        l_arrTk.push(record[model.getFieldKey('TK')]);
+    });
+
+};

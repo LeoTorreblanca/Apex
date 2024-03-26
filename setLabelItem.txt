@@ -1,0 +1,3 @@
+function setLabelItem (pItem, pLabel){
+    $("label[for='"+ pItem +"']").text(pLabel);
+};

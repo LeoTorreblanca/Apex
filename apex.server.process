@@ -1,0 +1,9 @@
+apex.server.process('PL-NAME', {
+	x01: jsonString
+}, 
+	{
+		"dataType": "text",
+		success: function (data) {
+			Accion on success
+		}
+	});
